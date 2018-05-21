@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'BxSockets'
-    s.version = '0.1.0'
+    s.version = '0.1.1'
     s.swift_version    = '4.1'
     s.summary          = 'Beautiful WebSocket communication with Swift.'
 
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
     s.source_files = 'BxSockets/**/*'
 
     s.dependency 'RxSwift', '~> 4.0'
+    s.dependency 'RxCocoa', '~> 4.0'
     s.dependency 'BxUtility', '~> 1.2.1'
     s.dependency 'BxCoding', '~> 1.0.0'
     s.dependency 'Starscream', '~> 3.0'

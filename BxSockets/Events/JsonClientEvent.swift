@@ -12,14 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import <UIKit/UIKit.h>
+import Foundation
+import BxCoding
 
-//! Project version number for BxSockets.
-FOUNDATION_EXPORT double BxSocketsVersionNumber;
+public protocol JsonClientEvent: ClientEvent {
+    
+    associatedtype Message: FileEncodable
+    
+    var message: Message { get }
+}
 
-//! Project version string for BxSockets.
-FOUNDATION_EXPORT const unsigned char BxSocketsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BxSockets/PublicHeader.h>
-
-
+extension JsonClientEvent {
+    
+    public func generate() throws -> MessagingEvent {
+        return .data(try JsonEncoder.encode(message).data(using: .utf8).unwrap())
+    }
+}

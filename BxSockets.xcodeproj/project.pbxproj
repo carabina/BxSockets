@@ -7,9 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4CD1161FD0A5E58EF3A97C /* Pods_BxSocketsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71827CE6F9EDBE7E002197B2 /* Pods_BxSocketsTests.framework */; };
+		79A5E198DA04C554C7A8CD9C /* Pods_BxSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6948A819F0279E7464DED3 /* Pods_BxSockets.framework */; };
+		C908D0A120B2490000146B12 /* BxSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0A020B2490000146B12 /* BxSockets.swift */; };
+		C908D0A320B24A6D00146B12 /* AnyServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0A220B24A6D00146B12 /* AnyServerEvent.swift */; };
+		C908D0A520B24B9600146B12 /* AnyClientEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0A420B24B9600146B12 /* AnyClientEvent.swift */; };
+		C908D0A720B24BBD00146B12 /* MessagingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0A620B24BBD00146B12 /* MessagingEvent.swift */; };
+		C908D0A920B24FDA00146B12 /* JsonClientEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0A820B24FDA00146B12 /* JsonClientEvent.swift */; };
+		C908D0AB20B2526400146B12 /* JsonServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D0AA20B2526400146B12 /* JsonServerEvent.swift */; };
+		C9B21DC820B22E4E00C6257C /* WebSocketDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DC720B22E4E00C6257C /* WebSocketDelegateProxy.swift */; };
+		C9B21DCA20B2401500C6257C /* WebSocket+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DC920B2401500C6257C /* WebSocket+Rx.swift */; };
+		C9B21DCD20B2429900C6257C /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DCC20B2429900C6257C /* MessagingService.swift */; };
+		C9B21DCF20B2431100C6257C /* MessagingConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DCE20B2431100C6257C /* MessagingConnection.swift */; };
+		C9B21DD120B2441400C6257C /* MessagingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DD020B2441400C6257C /* MessagingProtocol.swift */; };
+		C9B21DD520B2455A00C6257C /* ServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DD420B2455A00C6257C /* ServerEvent.swift */; };
+		C9B21DD720B2456300C6257C /* ClientEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21DD620B2456300C6257C /* ClientEvent.swift */; };
 		C9B9065320B070BC001E55F1 /* BxSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B9064920B070BC001E55F1 /* BxSockets.framework */; };
 		C9B9065820B070BC001E55F1 /* BxSocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9065720B070BC001E55F1 /* BxSocketsTests.swift */; };
 		C9B9065A20B070BC001E55F1 /* BxSockets.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B9064C20B070BC001E55F1 /* BxSockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B9066620B070D6001E55F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C9B9066320B070D5001E55F1 /* README.md */; };
+		C9B9066720B070D6001E55F1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C9B9066420B070D6001E55F1 /* LICENSE */; };
+		C9B9066A20B075D8001E55F1 /* BxSockets.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C9B9066920B075D7001E55F1 /* BxSockets.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +41,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71827CE6F9EDBE7E002197B2 /* Pods_BxSocketsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxSocketsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D57240F103E18C0F832160C /* Pods-BxSocketsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxSocketsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BxSocketsTests/Pods-BxSocketsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A625B53315E4B4D14FC8C126 /* Pods-BxSockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxSockets.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BxSockets/Pods-BxSockets.debug.xcconfig"; sourceTree = "<group>"; };
+		C908D0A020B2490000146B12 /* BxSockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BxSockets.swift; sourceTree = "<group>"; };
+		C908D0A220B24A6D00146B12 /* AnyServerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyServerEvent.swift; sourceTree = "<group>"; };
+		C908D0A420B24B9600146B12 /* AnyClientEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyClientEvent.swift; sourceTree = "<group>"; };
+		C908D0A620B24BBD00146B12 /* MessagingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingEvent.swift; sourceTree = "<group>"; };
+		C908D0A820B24FDA00146B12 /* JsonClientEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonClientEvent.swift; sourceTree = "<group>"; };
+		C908D0AA20B2526400146B12 /* JsonServerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonServerEvent.swift; sourceTree = "<group>"; };
+		C9B21DC720B22E4E00C6257C /* WebSocketDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketDelegateProxy.swift; sourceTree = "<group>"; };
+		C9B21DC920B2401500C6257C /* WebSocket+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSocket+Rx.swift"; sourceTree = "<group>"; };
+		C9B21DCC20B2429900C6257C /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		C9B21DCE20B2431100C6257C /* MessagingConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingConnection.swift; sourceTree = "<group>"; };
+		C9B21DD020B2441400C6257C /* MessagingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingProtocol.swift; sourceTree = "<group>"; };
+		C9B21DD420B2455A00C6257C /* ServerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEvent.swift; sourceTree = "<group>"; };
+		C9B21DD620B2456300C6257C /* ClientEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientEvent.swift; sourceTree = "<group>"; };
 		C9B9064920B070BC001E55F1 /* BxSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BxSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B9064C20B070BC001E55F1 /* BxSockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BxSockets.h; sourceTree = "<group>"; };
 		C9B9064D20B070BC001E55F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9B9065220B070BC001E55F1 /* BxSocketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BxSocketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B9065720B070BC001E55F1 /* BxSocketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BxSocketsTests.swift; sourceTree = "<group>"; };
 		C9B9065920B070BC001E55F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B9066320B070D5001E55F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C9B9066420B070D6001E55F1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C9B9066920B075D7001E55F1 /* BxSockets.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BxSockets.podspec; sourceTree = "<group>"; };
+		D1C786FF53603A222286798B /* Pods-BxSocketsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxSocketsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BxSocketsTests/Pods-BxSocketsTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED6948A819F0279E7464DED3 /* Pods_BxSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BEA02753D1BC3151A9215D /* Pods-BxSockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxSockets.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BxSockets/Pods-BxSockets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A5E198DA04C554C7A8CD9C /* Pods_BxSockets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +85,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B9065320B070BC001E55F1 /* BxSockets.framework in Frameworks */,
+				0A4CD1161FD0A5E58EF3A97C /* Pods_BxSocketsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450DD87567768E824ECD0B45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A625B53315E4B4D14FC8C126 /* Pods-BxSockets.debug.xcconfig */,
+				F8BEA02753D1BC3151A9215D /* Pods-BxSockets.release.xcconfig */,
+				8D57240F103E18C0F832160C /* Pods-BxSocketsTests.debug.xcconfig */,
+				D1C786FF53603A222286798B /* Pods-BxSocketsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9B21DCB20B2413900C6257C /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				C9B21DC920B2401500C6257C /* WebSocket+Rx.swift */,
+				C9B21DC720B22E4E00C6257C /* WebSocketDelegateProxy.swift */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		C9B21DD220B2454600C6257C /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				C9B21DCC20B2429900C6257C /* MessagingService.swift */,
+				C9B21DCE20B2431100C6257C /* MessagingConnection.swift */,
+				C9B21DD020B2441400C6257C /* MessagingProtocol.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		C9B21DD320B2454E00C6257C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				C908D0A620B24BBD00146B12 /* MessagingEvent.swift */,
+				C9B21DD420B2455A00C6257C /* ServerEvent.swift */,
+				C908D0AA20B2526400146B12 /* JsonServerEvent.swift */,
+				C908D0A220B24A6D00146B12 /* AnyServerEvent.swift */,
+				C9B21DD620B2456300C6257C /* ClientEvent.swift */,
+				C908D0A820B24FDA00146B12 /* JsonClientEvent.swift */,
+				C908D0A420B24B9600146B12 /* AnyClientEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		C9B9063F20B070BC001E55F1 = {
 			isa = PBXGroup;
 			children = (
+				C9B9066420B070D6001E55F1 /* LICENSE */,
+				C9B9066320B070D5001E55F1 /* README.md */,
+				C9B9066920B075D7001E55F1 /* BxSockets.podspec */,
 				C9B9064B20B070BC001E55F1 /* BxSockets */,
 				C9B9065620B070BC001E55F1 /* BxSocketsTests */,
 				C9B9064A20B070BC001E55F1 /* Products */,
+				450DD87567768E824ECD0B45 /* Pods */,
+				D0FF2D7E0F4BDC0DEEFDF427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				C9B9064C20B070BC001E55F1 /* BxSockets.h */,
+				C908D0A020B2490000146B12 /* BxSockets.swift */,
+				C9B21DD220B2454600C6257C /* Messaging */,
+				C9B21DD320B2454E00C6257C /* Events */,
+				C9B21DCB20B2413900C6257C /* Sockets */,
 				C9B9064D20B070BC001E55F1 /* Info.plist */,
 			);
 			path = BxSockets;
@@ -84,6 +179,15 @@
 				C9B9065920B070BC001E55F1 /* Info.plist */,
 			);
 			path = BxSocketsTests;
+			sourceTree = "<group>";
+		};
+		D0FF2D7E0F4BDC0DEEFDF427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED6948A819F0279E7464DED3 /* Pods_BxSockets.framework */,
+				71827CE6F9EDBE7E002197B2 /* Pods_BxSocketsTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9B9065D20B070BC001E55F1 /* Build configuration list for PBXNativeTarget "BxSockets" */;
 			buildPhases = (
+				FEC19359A8F59DFCD17277ED /* [CP] Check Pods Manifest.lock */,
 				C9B9064420B070BC001E55F1 /* Sources */,
 				C9B9064520B070BC001E55F1 /* Frameworks */,
 				C9B9064620B070BC001E55F1 /* Headers */,
@@ -122,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9B9066020B070BC001E55F1 /* Build configuration list for PBXNativeTarget "BxSocketsTests" */;
 			buildPhases = (
+				C7FFF2823B046D3EEEC52A66 /* [CP] Check Pods Manifest.lock */,
 				C9B9064E20B070BC001E55F1 /* Sources */,
 				C9B9064F20B070BC001E55F1 /* Frameworks */,
 				C9B9065020B070BC001E55F1 /* Resources */,
+				4CE0665F67261CCCA91325C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +255,7 @@
 				TargetAttributes = {
 					C9B9064820B070BC001E55F1 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					C9B9065120B070BC001E55F1 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -177,6 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9066720B070D6001E55F1 /* LICENSE in Resources */,
+				C9B9066A20B075D8001E55F1 /* BxSockets.podspec in Resources */,
+				C9B9066620B070D6001E55F1 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +300,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CE0665F67261CCCA91325C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BxSocketsTests/Pods-BxSocketsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BxSocketsTests/Pods-BxSocketsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FFF2823B046D3EEEC52A66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BxSocketsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC19359A8F59DFCD17277ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BxSockets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9B9064420B070BC001E55F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B21DCD20B2429900C6257C /* MessagingService.swift in Sources */,
+				C908D0A720B24BBD00146B12 /* MessagingEvent.swift in Sources */,
+				C9B21DC820B22E4E00C6257C /* WebSocketDelegateProxy.swift in Sources */,
+				C908D0A920B24FDA00146B12 /* JsonClientEvent.swift in Sources */,
+				C9B21DCF20B2431100C6257C /* MessagingConnection.swift in Sources */,
+				C9B21DD520B2455A00C6257C /* ServerEvent.swift in Sources */,
+				C908D0A520B24B9600146B12 /* AnyClientEvent.swift in Sources */,
+				C9B21DD720B2456300C6257C /* ClientEvent.swift in Sources */,
+				C908D0A120B2490000146B12 /* BxSockets.swift in Sources */,
+				C908D0A320B24A6D00146B12 /* AnyServerEvent.swift in Sources */,
+				C9B21DCA20B2401500C6257C /* WebSocket+Rx.swift in Sources */,
+				C9B21DD120B2441400C6257C /* MessagingProtocol.swift in Sources */,
+				C908D0AB20B2526400146B12 /* JsonServerEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +523,9 @@
 		};
 		C9B9065E20B070BC001E55F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A625B53315E4B4D14FC8C126 /* Pods-BxSockets.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.borchero.BxSockets;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +551,9 @@
 		};
 		C9B9065F20B070BC001E55F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BEA02753D1BC3151A9215D /* Pods-BxSockets.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -388,7 +578,9 @@
 		};
 		C9B9066120B070BC001E55F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D57240F103E18C0F832160C /* Pods-BxSocketsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BEHQZ5DW9;
 				INFOPLIST_FILE = BxSocketsTests/Info.plist;
@@ -406,7 +598,9 @@
 		};
 		C9B9066220B070BC001E55F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C786FF53603A222286798B /* Pods-BxSocketsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BEHQZ5DW9;
 				INFOPLIST_FILE = BxSocketsTests/Info.plist;

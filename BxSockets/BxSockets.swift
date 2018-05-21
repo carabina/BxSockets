@@ -12,14 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import <UIKit/UIKit.h>
+import Foundation
+import BxUtility
 
-//! Project version number for BxSockets.
-FOUNDATION_EXPORT double BxSocketsVersionNumber;
-
-//! Project version string for BxSockets.
-FOUNDATION_EXPORT const unsigned char BxSocketsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BxSockets/PublicHeader.h>
-
-
+public struct BxSocketsFrameworks {
+    
+    public enum Error: Swift.Error {
+        
+        case gracefulTermination
+        case noConnection
+    }
+    
+    public static var logger: Logger? = {
+        return PrintingLogger(with: "BxSockets", logsTimestamp: true)
+    }()
+}

@@ -12,14 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import <UIKit/UIKit.h>
+import Foundation
+import RxSwift
 
-//! Project version number for BxSockets.
-FOUNDATION_EXPORT double BxSocketsVersionNumber;
-
-//! Project version string for BxSockets.
-FOUNDATION_EXPORT const unsigned char BxSocketsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BxSockets/PublicHeader.h>
-
-
+public struct AnyServerEvent: ServerEvent {
+    
+    public func isRecognized(with event: MessagingEvent) throws -> Bool {
+        return true
+    }
+    
+    public func handle(message: MessagingEvent) throws {
+        return
+    }
+}

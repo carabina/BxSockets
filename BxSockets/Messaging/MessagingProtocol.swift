@@ -12,14 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import <UIKit/UIKit.h>
+import Foundation
 
-//! Project version number for BxSockets.
-FOUNDATION_EXPORT double BxSocketsVersionNumber;
-
-//! Project version string for BxSockets.
-FOUNDATION_EXPORT const unsigned char BxSocketsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BxSockets/PublicHeader.h>
-
-
+public struct MessagingProtocol {
+    
+    internal let name: String
+    
+    public init(name: String) {
+        self.name = name
+    }
+}
